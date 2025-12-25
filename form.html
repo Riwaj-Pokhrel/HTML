@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+      <fieldset>
+        <legend align="center">Personal Info</legend>
+         <p>
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            required
+            autocomplete="on"
+          />
+        </p>
+        <p>
+          <label for="lastname">Last Name:</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            required
+            autocomplete="on"
+          />
+        </p>
+        <p>
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            required
+            autocomplete="on"
+          />
+        </p>
+        <p>
+          <label for="password">Passowrd:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="8"
+          />
+        </p>
+        <p>
+          <label for="dateOfBirth">DOB:</label>
+          <input
+            type="date"
+            name="dateOfBirth"
+            id="dateOfBirth"
+            required
+            autocomplete="on"
+          />
+        </p>
+        <p>
+          <label for="phone_code">Phone:</label>
+          <select name="phone_code" id="phone_code">
+            <option value="Nepal" selected>+977</option>
+            <option value="India">+911</option>
+            <option value="US">+922</option>
+            <option value="UK">+923</option>
+          </select>
+
+          <!-- <input type="text" name="phone" id="phone" list="country_code" />
+          <datalist id="country_code">
+            <option value="+977" selected></option>
+            <option value="+911"></option>
+            <option value="+922"></option>
+            <option value="+923"></option>
+          </datalist> -->
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            required
+            autocomplete="on"
+            pattern="[0-9]{10}"
+            placeholder="0123456789"
+          />
+        </p>
+        <p>
+          <label for="bio">Bio:</label>
+          <textarea
+            name="bio"
+            id="bio"
+            placeholder="Write about your preferences."
+            rows="5"
+            cols="50"
+          ></textarea>
+        </p>
+        <p>
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="gender" />
+          <label for="gender">Male</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="gender" />
+          <label for="gender">Female</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="gender" />
+          <label for="gender">Other</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <p>
+          <label for="hobbies">Hobbies:</label>
+          <input type="checkbox" name="hobbies" id="hobbies" />
+          <label for="hobbies">Singing</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+
+          <input type="checkbox" name="hobbies" id="hobbies" />
+          <label for="hobbies">Dancing</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+
+          <input type="checkbox" name="hobbies" id="hobbies" />
+          <label for="hobbies">Playing</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+      </fieldset>
+    <br><br>
+      <button type="submit">submit</button>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       <button type="reset">Clear</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
