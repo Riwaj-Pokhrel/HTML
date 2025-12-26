@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe page</title>
+</head>
+<body>
+    <h2>This is inside the Iframe</h2>
+    <p>
+        <iframe  frameborder="1" width="500px" height="250px" name="frame"></iframe>
+        <a href="hello.html" target="frame">Open in frame</a>
+    </p>
+<p>
+    <a href="hello.html" target="_self">
+    Open in iframe(targe="self")</a>
+</p>
+<p>
+<a href="hello.html"target="_parent">
+    Replace parent page(target="_parent")
+</a>
+</p>
+<p>
+<a href="hello.html"target="_top">
+    Break out of iframe completely(target="_top")
+</a>
+
+</p>
+</body>
+</html>

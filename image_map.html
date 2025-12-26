@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image map example</title>
+</head>
+<body>
+   <h2>Server-Side Image map(ismap)</h2>
+   <p>Click anywhere on the image:</p>
+   <a href="https://example.com">
+   <img src="picture.png" alt="Workplace Image" ismap ></a>
+<hr>
+<h2>Client-Side Image Map(usemap)</h2>
+<p>Click different parts of the image:</p>
+<img src="picture.png" alt="Workplace image" usemap="#workmap">
+<map name="workmap">
+
+<area shape="rect" coords="34,44,270,333,250" href="https://www.wikipedia.org" title="rectangle">
+
+<area shape="circle" coords="337,300,44" href="https://www.youtube.com" title="circle">
+</map>
+</body>
+</html>
